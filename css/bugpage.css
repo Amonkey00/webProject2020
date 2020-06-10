@@ -3,7 +3,7 @@ body {
     padding: 0;
     width: 1600px;
     background-image: url(../image/bg.png);
-    background-size:270px,450px;
+    background-size: 270px,450px;
 }
 /* topColumn */
 .topBg {
@@ -58,7 +58,7 @@ body {
 
             .top-right ul li a {
                 font-size: 20x;
-                color: rgb(180,180,180);
+                color: rgb(120,120,120);
                 text-decoration: none;
             }
 
@@ -183,127 +183,132 @@ a.menuButton {
         text-align: none;
     }
 
-/*-----frontPicture----*/
-.frontPicture {
-    background-image: url(../image/frontPicture2.png);
-    background-size: 1267px 713px;
-    background-repeat: no-repeat;
-    background-position: top;
-    height: 560px;
+/*--------shopContent--------*/
+.shopPage {
+    background-color: white;
+    margin-left: 100px;
+    margin-top: 50px;
+    height: 1800px;
+    width: 1300px;
 }
 
-.frontEnter a {
-    background-color: rgb(80,80,80,0.5);
-    color: rgb(200,200,200);
-    height: 40px;
-    width: 160px;
-    float: left;
-    padding: 3px;
-    margin-left: 1200px;
-    margin-top: 490px;
-    font-size: 30px;
-    text-decoration: none;
-    text-align: center;
+.shopPic {
+    background-color: rgb(240,240,240);
+    position: relative;
+    left: 100px;
+    top: 100px;
+    height: 500px;
+    width: 500px;
 }
 
-    .frontEnter a:hover {
-        background-color: rgb(120,120,120);
-        color: lightgray;
+    .shopPic img {
+        position: relative;
+        top: 50px;
+        left: 50px;
+        height: 400px;
+        width: 400px;
     }
-/*-----goodsMenu-----*/
-.goodsMenu {
-    margin-top: 100px;
-    height: 2000px;
+
+.shopTitle {
+    background-color: white;
+    position: relative;
+    border-left: 2px solid rgb(0,0,0);
+    margin-left: 5px;
+    left: 700px;
+    top: -430px;
+    height: 500px;
+    width: 500px;
 }
 
-.menu-left {
-    margin-left: 10px;
-    border-left: 2px solid black;
-    background-color: rgb(180,180,180);
-    width: 250px;
-    height: 360px;
+    .shopTitle h4 {
+        font-size: 25px;
+        font-weight: 300;
+    }
+
+    .shopTitle h2 {
+        position: relative;
+        top: -10px;
+        font-size: 35px;
+    }
+
+.shopChoose {
+    background-color: white;
+    position: relative;
+    left: 30px;
+    height: 100px;
+    width: 400px;
 }
 
-.menu-left-list {
-    list-style: none;
+    .shopChoose ul li input {
+        display: none;
+    }
+
+.choice {
+    display: block;
+    position: relative;
+    text-align: center;
+    font-size: 25px;
+    float: left;
+    margin-left: 5px;
+    font-weight: 400;
+    width: 130px;
+    height: 40px;
+    top: 10px;
+    left: -70px;
+}
+
+    .choice label {
+        text-decoration: none;
+        border: 1px solid black;
+        padding: 7px;
+        color: black;
+    }
+
+    .choice input:checked + label {
+        color: white;
+        background-color: black;
+    }
+
+.buyButton {
+    text-align: center;
+    font-size: 32px;
+    position: relative;
+    top: 100px;
+    left: 0;
+    height: 50px;
     width: 200px;
 }
 
-    .menu-left-list li {
-        margin: 50px 0;
-        width: 150px;
-    }
-
-    .menu-left-list h4 {
-        color: rgb(50,50,50);
-        padding: 10px;
-        text-align: left;
-        font-size: 42px;
-        border-bottom: 1px solid black;
-    }
-
-    .menu-left-list li a {
-        color: rgb(20,20,20);
-        height: 100px;
-        width: 60px;
+    .buyButton a {
+        padding: 6px;
         text-decoration: none;
-        font-size: 15px;
-        font-weight: 500;
-        border-bottom:1px solid black;
+        color: black;
+        background-color: white;
     }
 
-        .menu-left-list li a:hover {
-            color: rgb(140,140,140);
+        .buyButton a:hover {
+            background-color: lightgray;
         }
 
-.menu-right {
-    background-color: rgb(180,180,180);
-    width: 1130px;
-    height: 3500px;
-    float: left;
-    margin-top: -300px;
-    margin-left: 300px;
+.shopIns {
+    background-color: rgb(240,240,240);
+    position: relative;
+    height: 900px;
+    width: 1100px;
+    top: -350px;
+    left: 100px;
 }
 
-.goodsBlock {
-    background-color:whitesmoke;
-    opacity:0.7;
-    width: 1000px;
-    height: 1100px;
-    margin-top: 60px;
-    margin-left: 60px;
-    float: left;
-}
-
-    .goodsBlock h4 {
-        margin-left:10px;
-        text-align: left;
+    .shopIns h1 {
         font-size: 50px;
-        border-bottom: 14px solid rgb(180,180,180);
-    }
-
-.picture {
-    margin-left: 60px;
-    margin-top: 130px;
-    width: 200px;
-    height: 190px;
-    display: inline-block;
-    padding: 35px 8px;
-    text-align: center;
-    font-size: 20px;
-}
-
-    .picture a {
         text-align: center;
-        color: rgb(80,80,80);
-        font-weight: 800;
     }
 
-    .picture img {
-        height: 190px;
-        width: 170px;
-    }
-
-    .picture a {
-        text-decoration: none;
-    }
+.information {
+    position: relative;
+    left: 100px;
+    width: 900px;
+    letter-spacing: 3px;
+    font-size: 25px;
+    font-weight: 200;
+}
